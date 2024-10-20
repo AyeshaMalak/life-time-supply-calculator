@@ -8,26 +8,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="container">
-        <h1>Lifetimes Supply Calculator</h1>
-        <div class="calculator">
-            <label for="daily-amount">Daily Consumption (units):</label>
-            <input type="number" id="daily-amount" placeholder="Enter daily amount" required>
+        <h1>The Lifetime Supply Calculator</h1>
+
+        <!-- User Input Section -->
+        <div class="input-section">
+            <label for="snack">Favourite Snack:</label>
+            <input type="text" id="snack" placeholder="Enter your favourite snack">
 
             <label for="current-age">Current Age:</label>
-            <input type="number" id="current-age" placeholder="Enter your current age" required>
+            <input type="number" id="current-age" placeholder="Enter your current age" min="0">
 
-            <label for="life-expectancy">Expected Life Span:</label>
-            <input type="number" id="life-expectancy" placeholder="Enter expected lifespan" required>
+            <label for="max-age">Estimated Maximum Age:</label>
+            <input type="number" id="max-age" placeholder="Enter your estimated maximum age" min="0">
+
+            <label for="per-day">Amount of Snacks per day:</label>
+            <input type="number" id="per-day" placeholder="Enter amount per day" min="1">
 
             <button onclick="calculateLifetimeSupply()">Calculate</button>
-            
-            <div class="result">
-                <p id="result-text">Lifetime Supply Needed: <span id="result-value">0</span> units</p>
-            </div>
+        </div>
+
+        <!-- Result Section -->
+        <div class="result-box">
+            <p id="result"></p>
         </div>
     </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
