@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lifetime Supply Calculator">
+    <title>Lifetime Supply Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lifetimes Supply Calculator</h1>
+        <div class="calculator">
+            <label for="daily-amount">Daily Consumption (units):</label>
+            <input type="number" id="daily-amount" placeholder="Enter daily amount" required>
+
+            <label for="current-age">Current Age:</label>
+            <input type="number" id="current-age" placeholder="Enter your current age" required>
+
+            <label for="life-expectancy">Expected Life Span:</label>
+            <input type="number" id="life-expectancy" placeholder="Enter expected lifespan" required>
+
+            <button onclick="calculateLifetimeSupply()">Calculate</button>
+            
+            <div class="result">
+                <p id="result-text">Lifetime Supply Needed: <span id="result-value">0</span> units</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
